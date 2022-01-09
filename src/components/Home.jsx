@@ -17,6 +17,9 @@ export default function Home() {
             <S_Button>
               <Link to='magazine'>MAGAZINE_TEMP</Link>
             </S_Button>
+            <S_Button>
+              <Link to='carousel'>CAROUSEL</Link>
+            </S_Button>
           </S_ButtonWrapper>
         </S_CenterWrapper>
       </S_Main>
