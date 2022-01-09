@@ -51,7 +51,7 @@ export default function MagazineList() {
   }
 
   return (
-    <>
+    <S_App>
       {view === 'LIST' && (
         <>
           <S_SelectWrapper>
@@ -94,9 +94,15 @@ export default function MagazineList() {
           />
         </>
       )}
-    </>
+    </S_App>
   );
 }
+
+const S_App = styled.div`
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+`;
 
 const S_ButtonWrapper = styled.div`
   position: absolute;

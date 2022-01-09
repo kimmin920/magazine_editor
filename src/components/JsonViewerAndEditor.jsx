@@ -6,16 +6,22 @@ import test1 from '../data/test1.json';
 
 export default function JsonViewerAndEditor() {
   return (
-    <>
+    <S_App>
       <S_Sidebar>
         <S_SidebarHeader>
           <S_HeaderTitle>JSON VIEWER</S_HeaderTitle>
         </S_SidebarHeader>
         <JsonEditor json={test1} />
       </S_Sidebar>
-    </>
+    </S_App>
   );
 }
+
+const S_App = styled.div`
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+`;
 
 const S_HeaderTitle = styled.div`
   background-color: #7d4cdb;
@@ -36,10 +42,4 @@ const S_Sidebar = styled.aside`
   background-color: #f8f8f8;
   overflow: auto;
   /* border-right: 1px solid rgba(0, 0, 0, 0.33); */
-`;
-
-const S_App = styled.div`
-  height: 100vh;
-  width: 100vw;
-  background-color: grey;
 `;
